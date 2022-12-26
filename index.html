@@ -3,31 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <article class="card">
 
-  Equilibrium #3429
+    <picture>
+      <img class="card__image" width="604px" height="604px" alt="representation of NFT" src="images/image-equilibrium.jpg">
+    </picture>
+    
+    <section class="card__content">
+      <h1 class="card__header">Equilibrium #3429</h1>
+      <p class="card__description">Our Equilibrium collection promotes balance and calm.</p>
 
-  Our Equilibrium collection promotes balance and calm.
+      <section class="card__quotation">
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+            <div class="card__price">   
+              <img src="images/icon-ethereum.svg">
+              <p>0.041 ETH</p>
+            </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+           <div class="card__time">
+             <img src="images/icon-clock.svg">
+             <p> 3 days left</p>
+           </div>
+      </section>
+    </section>
+    
+    <section class="card__footer">
+      <img class="card__authorImage" alt="image of author" width="132px" height="132px" src="images/image-avatar.png">
+      <p class="card__authorTitle">Creation of</p>
+      <p class="card__author">Ponce Santiago</p>
+    </section>
+
+
+  </article>
 </body>
 </html>
