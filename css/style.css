@@ -14,6 +14,10 @@
 
 }
 
+a{
+    text-decoration: none;
+    color: var(--White);
+}
 body
 {
     background-color: var(--Very_dark_blue_main);
@@ -41,7 +45,6 @@ body
     max-inline-size: 100%;
     border-radius: 10px;
     block-size: auto;
-    margin-bottom: 1.5rem;
 }
 
 .card__content
@@ -59,10 +62,16 @@ body
     color: var(--White);
     font-size: 1.4rem;
     font-weight: 600;
+    margin-top: 1.5rem;
+
     margin-bottom: 1.5rem;
 
 }
 
+.card__header:hover
+{
+    color: var(--Cyan);
+}
 .card__description
 {
     color: var(--Soft_blue);
@@ -97,18 +106,46 @@ body
 .card__footer
 {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     color: var(--Soft_blue);
-
 }
 
 .card__authorImage
 {
     height: 2rem;
     width: 2rem;
+    margin-right: 1rem;
 }
 
 .card__author
 {
     color: var(--White);
+    margin-left: .5rem;
+}
+
+.card__author a:hover
+{
+    color: var(--Cyan);
+}
+
+
+.card__image:hover
+{
+opacity: 0.3;
+}
+
+.overlay
+{
+    background-color: var(--Very_dark_blue_card);
+    background-image: url("../images/icon-view.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    block-size: auto;
+    border-radius: 10px;
+    box-sizing:border-box
+}
+
+.overlay:hover
+{
+    background-color: var(--Cyan);
 }
